@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LoginModal from "@/components/LoginModal";
 
 interface NavItemProps {
   text: string;
@@ -47,8 +48,8 @@ const NavBar = () => {
               <NavItem text="Справочник" href="/reference" />
             </ul>
             <div className="ml-6 flex items-center">
-              <Button variant="outline" className="mr-2">Войти</Button>
-              <Button>Регистрация</Button>
+              <LoginModal />
+              <Button className="ml-2">Регистрация</Button>
             </div>
           </div>
           
@@ -91,8 +92,8 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="px-4 py-3 space-y-2">
-            <Button variant="outline" className="w-full">Войти</Button>
-            <Button className="w-full">Регистрация</Button>
+            <LoginModal />
+            <Button className="w-full mt-2">Регистрация</Button>
           </div>
         </div>
       )}
