@@ -43,6 +43,7 @@ const NavBar = () => {
               <NavItem text="Галерея работ" href="/gallery" />
               <NavItem text="Блог" href="/blog" />
               <NavItem text="Форум" href="/forum" />
+              <NavItem text="Чаты" href="/chats" />
               <NavItem text="Справочник" href="/reference" />
             </ul>
             <div className="ml-6 flex items-center">
@@ -81,6 +82,9 @@ const NavBar = () => {
             </Link>
             <Link to="/forum" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">
               Форум
+            </Link>
+            <Link to="/chats" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">
+              Чаты
             </Link>
             <Link to="/reference" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">
               Справочник
